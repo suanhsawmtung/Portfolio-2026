@@ -45,6 +45,12 @@ export default function Page() {
 
       <div id="top" />
       <section className="hero container">
+        <div className="hero-photo">
+          <img
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profile-SQDzFbYzuP03Obl9b0yyt0Eu8zjZ51.png"
+            alt="Professional portrait of Suanh Sawm Tung"
+          />
+        </div>
         <div className="hero-copy">
           <p className="eyebrow">Software Developer · Full-Stack Web Engineer</p>
           <h1>Suanh Sawm Tung <em>(Augustine)</em></h1>
