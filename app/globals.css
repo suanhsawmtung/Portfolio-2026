@@ -70,10 +70,10 @@ a {
 .wordmark > span:first-child {
   display: grid;
   place-items: center;
-  width: 30px;
-  height: 30px;
-  background: var(--accent);
-  color: white;
+  width: 40px;
+  height: 40px;
+  /* background: var(--accent); */
+  /* color: white; */
   font-size: 11px;
   letter-spacing: 0.06em;
 }

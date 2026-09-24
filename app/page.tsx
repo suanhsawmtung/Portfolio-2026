@@ -29,7 +29,9 @@ export default function Page() {
       <header className="site-header">
         <div className="container nav-wrap">
           <a href="#top" className="wordmark" aria-label="Suanh Sawm Tung home">
-            <span>AS</span>
+            <span>
+              <img src="/profile-circle.png" alt="" />
+            </span>
             <span className="wordmark-name">Suanh Sawm Tung</span>
           </a>
           <nav
