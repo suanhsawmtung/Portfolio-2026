@@ -286,6 +286,9 @@ h3 {
   gap: 70px;
   align-items: start;
 }
+.project-feature + .project-feature {
+  margin-top: 100px;
+}
 .project-image {
   position: relative;
   background: #183b34;

@@ -233,6 +233,76 @@ export default function Page() {
               </p>
             </div>
           </article>
+          <article className="project-feature professional-project">
+            <div className="space-y-6">
+              <div className="project-image">
+                <img
+                  src="/creative-coder-myanmar.png"
+                  alt="Temporary project image for a professional software project"
+                />
+                <span>Professional project</span>
+              </div>
+              <div className="button-row">
+                <a
+                  className="button button-dark"
+                  href="https://creativecodermm.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo <ArrowUpRight />
+                </a>
+              </div>
+            </div>
+
+            <div className="project-content">
+              <p className="eyebrow">Professional Software Development</p>
+              <h3>Creative Coder Learning Platform</h3>
+              <p>
+                A learning platform I contributed to while working at Creative
+                Coder Myanmar. I worked with the development team to improve the
+                platform and support its day-to-day use by learners.
+              </p>
+              <div className="tag-list">
+                {["PHP", "Laravel", "Vue.js"].map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
+              <div className="case-study">
+                <div>
+                  <strong>Problem</strong>
+                  <p>
+                    The platform needed regular updates, new features, and fixes
+                    to support a better learning experience.
+                  </p>
+                </div>
+                <div>
+                  <strong>My contribution</strong>
+                  <p>
+                    I developed features, fixed errors, and worked with the team
+                    through a shared development workflow.
+                  </p>
+                </div>
+                <div>
+                  <strong>Key work</strong>
+                  <p>
+                    Implemented frontend and backend changes, investigated bugs,
+                    and helped improve existing parts of the platform.
+                  </p>
+                </div>
+                <div>
+                  <strong>What I learned</strong>
+                  <p>
+                    How to work on an active product, understand existing code,
+                    and collaborate with others on practical software work.
+                  </p>
+                </div>
+              </div>
+              {/* <p className="project-note">
+                The image is temporary and will be replaced with a project image
+                later.
+              </p> */}
+            </div>
+          </article>
         </div>
       </section>
 
