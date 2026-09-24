@@ -135,7 +135,7 @@ export default function Page() {
             <div className="space-y-6">
               <div className="project-image">
                 <img
-                  src="/azue-perfume.png"
+                  src="/azue-perfume-house.png"
                   alt="AZUE perfume bottle on a stone surface"
                 />
                 <span>Personal hobby project</span>

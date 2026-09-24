@@ -300,8 +300,8 @@ h3 {
   display: block;
   transition: transform 0.5s;
 }
-.project-feature:hover .project-image img {
-  transform: scale(1.03);
+.project-feature .project-image:hover img {
+  transform: scale(1.06);
 }
 .project-image span {
   position: absolute;
