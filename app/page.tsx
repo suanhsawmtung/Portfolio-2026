@@ -128,8 +128,8 @@ export default function Page() {
         <div className="container">
           <SectionHeading
             number="02"
-            title="Selected projects"
-            intro="A practical learning project built from the frontend to the backend."
+            title="Selected Work"
+            intro="A mix of personal experiments and professional work across the stack."
           />
           <article className="project-feature">
             <div className="space-y-6">
