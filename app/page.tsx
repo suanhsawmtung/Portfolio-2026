@@ -87,7 +87,11 @@ export default function Page() {
             <a className="button button-outline" href="#academic">
               Academic Profile
             </a>
-            <a className="text-link" href="#cv">
+            <a
+              className="text-link"
+              href="/augustine-cv.pdf"
+              download="augustine-cv.pdf"
+            >
               Download CV <Download />
             </a>
           </div>
@@ -510,7 +514,11 @@ export default function Page() {
                 <small>linkedin.com / in / suanhsawmtung</small>
               </a>
             </span>
-            <a className="button button-dark" href="#top">
+            <a
+              className="button button-dark"
+              href="/augustine-cv.pdf"
+              download="augustine-cv.pdf"
+            >
               Download CV <Download />
             </a>
           </div>
