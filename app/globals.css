@@ -173,6 +173,14 @@ footer em {
   flex-wrap: wrap;
   margin-top: 34px;
 }
+.button-row-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
 .button {
   display: inline-flex;
   align-items: center;
@@ -503,10 +511,20 @@ h3 {
 .footer p {
   margin: 3px 0;
 }
+.hide-above-lg {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .project-feature {
     grid-template-columns: 1fr;
-    /* gap: 34px; */
+    gap: 30px;
+  }
+  .hide-under-lg {
+    display: none;
+  }
+  .hide-above-lg {
+    display: flex;
   }
 }
 @media (max-width: 760px) {

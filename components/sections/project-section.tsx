@@ -1,4 +1,5 @@
 import SectionHeading from "@/components/section-heading";
+import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 
 type ProjectCaseStudy = {
@@ -125,26 +126,21 @@ const ProjectSection = () => {
         <div className="space-y-40">
           {projects.map((project) => {
             const image = (
-              <div className="space-y-6">
+              <div className="space-y-6 order-first lg:order-0">
                 <div className="project-image">
                   <img src={project.image.src} alt={project.image.alt} />
                   <span>{project.image.label}</span>
                 </div>
-                <div
-                  className={`button-row${project.imagePosition === "last" ? " justify-end" : ""}`}
-                >
-                  {project.links.map((link) => (
-                    <a
-                      className={`button ${link.label === "Live Demo" ? "button-dark" : "button-outline"}`}
-                      href={link.href}
-                      key={link.label}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {link.label} <ArrowUpRight />
-                    </a>
-                  ))}
-                </div>
+
+                <ProjectLinks
+                  links={project.links}
+                  className={cn(
+                    "hide-under-lg",
+                    project.imagePosition === "last"
+                      ? "button-row-right"
+                      : "button-row",
+                  )}
+                />
               </div>
             );
 
@@ -192,6 +188,15 @@ const ProjectSection = () => {
                     <p>{project.caseStudy.learned.text}</p>
                   </div>
                 </div>
+                <ProjectLinks
+                  links={project.links}
+                  className={cn(
+                    "hide-above-lg",
+                    project.imagePosition === "last"
+                      ? "button-row-right"
+                      : "button-row",
+                  )}
+                />
                 {project.note && <p className="project-note">{project.note}</p>}
               </div>
             );
@@ -219,3 +224,27 @@ const ProjectSection = () => {
 };
 
 export default ProjectSection;
+
+const ProjectLinks = ({
+  links,
+  className,
+}: {
+  links: { label: string; href: string }[];
+  className: string;
+}) => {
+  return (
+    <div className={className}>
+      {links.map((link) => (
+        <a
+          className={`button ${link.label === "Live Demo" ? "button-dark" : "button-outline"}`}
+          href={link.href}
+          key={link.label}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {link.label} <ArrowUpRight />
+        </a>
+      ))}
+    </div>
+  );
+};
