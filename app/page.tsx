@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import { ArrowUpRight, Download } from "lucide-react";
+import Image from "next/image";
 
 const skills = {
   Languages: ["TypeScript", "JavaScript", "PHP"],
@@ -17,9 +18,10 @@ export default function Page() {
       <div id="top" />
       <section className="hero container">
         <div className="hero-photo">
-          <img
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/profile-SQDzFbYzuP03Obl9b0yyt0Eu8zjZ51.png"
+          <Image
+            src="/profile.png"
             alt="Professional portrait of Suanh Sawm Tung"
+            fill
           />
         </div>
         <div className="hero-copy">

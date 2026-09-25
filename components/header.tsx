@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import { useState } from "react";
 
 const navItems = [
@@ -21,7 +22,12 @@ const Header = () => {
       <div className="container nav-wrap">
         <a href="#top" className="wordmark" aria-label="Suanh Sawm Tung home">
           <span>
-            <img src="/profile-circle.png" alt="" />
+            <Image
+              src="/profile-circle.png"
+              alt="word mark"
+              width="40"
+              height="40"
+            />
           </span>
           <span className="wordmark-name">Suanh Sawm Tung</span>
         </a>
