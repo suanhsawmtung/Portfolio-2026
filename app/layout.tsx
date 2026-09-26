@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: "/profile.png",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/profile.png",
   },
 
   openGraph: {
