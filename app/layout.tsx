@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Suanh Sawm Tung (Augustine) — Software Developer",
   description:
-    "Personal portfolio of Suanh Sawm Tung, a software developer and full-stack web engineer from Myanmar.",
+    "Personal portfolio of Suanh Sawm Tung, a software developer from Myanmar.",
   icons: {
     icon: [
       // {
@@ -24,7 +24,31 @@ export const metadata: Metadata = {
         url: "/profile.png",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/profile.png",
+  },
+
+  openGraph: {
+    title: "Suanh Sawm Tung (Augustine) | Software Developer",
+    description: "Software Developer · Full-Stack Web & Mobile",
+    url: "https://suanhsawmtung.vercel.app/",
+    siteName: "Suanh Sawm Tung (Augustine)",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Suanh Sawm Tung (Augustine) - Software Developer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Suanh Sawm Tung (Augustine) | Software Developer",
+    description: "Software Developer · Full-Stack Web & Mobile",
+    images: ["/og-image.png"],
   },
 };
 
