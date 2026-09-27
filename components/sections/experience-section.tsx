@@ -24,8 +24,8 @@ const ExperienceSection = () => {
           />
           <Experience
             title="Web Developer"
-            company="Freelance"
-            meta="Yangon, Myanmar · Remote"
+            company="Creative Crus"
+            meta="Freelance · Yangon, Myanmar · Remote"
             dates="February 2023 — June 2023"
             tags={["Laravel", "Vue.js"]}
             description="Developed and maintained three Laravel-Vue.js projects, including implementing designs, adding features, and fixing bugs. This experience introduced me to real-world project collaboration and strengthened my practical development skills."
