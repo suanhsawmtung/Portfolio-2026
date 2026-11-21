@@ -37,10 +37,10 @@ const projects: Project[] = [
       label: "Personal hobby project",
     },
     links: [
-      { label: "Live Demo", href: "https://azue-perfume-house.netlify.app/" },
+      { label: "Live Demo", href: "https://azueperfumehouse.store/" },
       {
         label: "Frontend Repo",
-        href: "https://github.com/suanhsawmtung/Azue-Perfume-House",
+        href: "https://github.com/suanhsawmtung/Azue-Perfume-House-Web",
       },
       {
         label: "Backend Repo",
